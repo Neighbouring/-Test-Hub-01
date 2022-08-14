@@ -21,26 +21,28 @@ Message: {{ block.settings.message }}
 
 {% schema %}
 {
-  "name": "Auto Slider",
+  "name": "Slideshowz",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "slideshow",
   "settings": [
     {
-      "type": "header",
-      "content": "My settings"
-    },
-    {
       "type": "text",
-      "id": "my_id",
-      "label": "My setting label",
-      "default": "Enter text here"
-    },
-    {
-      "type": "textarea",
-      "id": "my_second_id",
-      "label": "Welcome message",
-      "default": "Welcome to my shop!"
+      "id": "title",
+      "label": "Slideshow"
     }
-  ]
+  ],
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
