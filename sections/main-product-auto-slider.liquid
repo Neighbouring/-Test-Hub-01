@@ -21,28 +21,20 @@ Message: {{ block.settings.message }}
 
 {% schema %}
 {
-  "name": "Slideshow",
+  "name": "t:sections.page.name",
   "tag": "section",
-  "class": "slideshow",
+  "class": "spaced-section",
   "settings": [
     {
-      "type": "text",
-      "id": "title",
-      "label": "Slideshowz"
+      "type": "page",
+      "id": "page",
+      "label": "Slidez"
     }
   ],
-  "blocks": [
-     {
-       "name": "Slide",
-       "type": "slide",
-       "settings": [
-         {
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-         }
-       ]
-     }
-   ]
+  "presets": [
+    {
+      "name": "Sliderz"
+    }
+  ]
 }
 {% endschema %}
