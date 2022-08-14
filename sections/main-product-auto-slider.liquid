@@ -7,6 +7,19 @@
 </div>
 
 
+
+{% comment %} 
+
+// Settings
+Message: {{ settings.message }}
+// Section
+Message: {{ section.settings.message }}
+// Block
+Message: {{ block.settings.message }}
+
+{% endcomment %}
+
+
 {% schema %}
     {
       "name": "Auto Slider",
