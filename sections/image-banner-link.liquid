@@ -1,0 +1,119 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+<div id="Banner-{{ section.id }}" class="banner-com-link">
+
+  <div id="banner-com-link-pc">
+  {%- if section.settings.image_1 != blank -%}
+    <style>
+      img#imagem-com-link-pc {
+        width: 100%;
+        height: auto;
+      }
+      img#imagem-com-link-mobile {
+        display: none;
+      }
+    </style>
+    {%- if section.settings.button_link_1 != blank -%}
+      <a href="{{ section.settings.button_link_1 }}">
+    {% endif %}
+      <img
+        id ="imagem-com-link-pc"
+        src="{{ section.settings.image_1 | img_url: '1500x' }}"
+        loading="lazy"
+        alt="{{ section.settings.image_1.alt | escape }}"
+        width="{{ section.settings.image_1.width }}"
+        height="{{ section.settings.image_1.width | divided_by: section.settings.image_1.aspect_ratio }}">  
+    {%- if section.settings.button_link_1 != blank -%}
+      </a>
+    {% endif %}
+  {% endif %}
+  </div>  
+  
+  <div id="banner-com-link-mobile">
+  {%- if section.settings.image_2 != blank -%}
+    <style>
+      @media screen and (max-width: 600px){
+        img#imagem-com-link-pc {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 600px){
+        img#imagem-com-link-mobile {
+          display: revert;
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+    {%- if section.settings.button_link_2 != blank -%}
+      <a href="{{ section.settings.button_link_2 }}">
+    {% endif %}
+      <img
+        id ="imagem-com-link-mobile"
+        src="{{ section.settings.image_2 | img_url: '1500x' }}"
+        loading="lazy"
+        alt="{{ section.settings.image_2.alt | escape }}"
+        width="{{ section.settings.image_2.width }}"
+        height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}">
+    {%- if section.settings.button_link_2 != blank -%}
+      </a>
+    {% endif %}
+  {%- endif -%}
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Banner + Link",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Banner para PC"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Banner para Celular"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Link para Desktop"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Link para Celular"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Link no Banner",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "url",
+          "id": "button_link_1B",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner com Link",
+      "blocks": [
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
