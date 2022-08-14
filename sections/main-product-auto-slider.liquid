@@ -8,43 +8,39 @@
 
 
 
-
 {% comment %} 
-
 // Settings
 Message: {{ settings.message }}
 // Section
 Message: {{ section.settings.message }}
 // Block
 Message: {{ block.settings.message }}
-
 {% endcomment %}
 
 
 
-
 {% schema %}
+{
+  "name": "Auto Slider",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
     {
-      "name": "Auto Slider",
-      "settings": [
-        {
-          "type": "header",
-          "content": "My settings"
-        },
-        {
-          "type": "text",
-          "id": "my_id",
-          "label": "My setting label",
-          "default": "Enter text here"
-        },
-        {
-          "type": "textarea",
-          "id": "my_second_id",
-          "label": "Welcome message",
-          "default": "Welcome to my shop!"
-        }
-      ]
+      "type": "header",
+      "content": "My settings"
+    },
+    {
+      "type": "text",
+      "id": "my_id",
+      "label": "My setting label",
+      "default": "Enter text here"
+    },
+    {
+      "type": "textarea",
+      "id": "my_second_id",
+      "label": "Welcome message",
+      "default": "Welcome to my shop!"
     }
-    
+  ]
+}
 {% endschema %}
-
