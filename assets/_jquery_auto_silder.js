@@ -1,4 +1,4 @@
-$('article#').hover(function () {
+$('article').hover(function () {
   $('article').toggleClass('parar');
 });
 
