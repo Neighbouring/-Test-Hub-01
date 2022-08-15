@@ -2,7 +2,7 @@
 
 <div id="Banner-{{ section.id }}" class="banner-com-link">
 
-  <h1>CONTENT {{ section.settings.iDtexto }}</h1>
+  <h1>CONTENT = {{ settings.txt_alt_text }}</h1>
 
 </div>
 
@@ -28,13 +28,20 @@ Message: {{ block.settings.message }}
   "settings": [
     {
       "type": "text",
-      "id": "iDtexto",
+      "id": "txt_alt_text",
       "label": "Descrição Alt Text"
     },
     {
       "type": "paragraph",
       "content": "Alt Text (Texto Alternativo) é o texto da descrição da imagens, aquele que é lido em voz alta por leitores de tela, ajudando os usuários com deficiência visual a navegar na web e melhorando a posição SEO."
-    }
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_payment_button",
+      "label": "Show dynamic checkout button",
+      "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/online-store/dynamic-checkout)",
+      "default": true
+    },
   ],
   "presets": [
     {
