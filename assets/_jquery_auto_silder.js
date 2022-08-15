@@ -1,7 +1,7 @@
-$('article').hover(function () {
-  $('article').toggleClass('parar');
+$('#section-auto-play').hover(function () {
+  $('#section-auto-play').toggleClass('parar');
 });
 
-$('article').blur(function () {
-  $('article').toggleClass('rodar');
+$('#section-auto-play').blur(function () {
+  $('#section-auto-play').toggleClass('rodar');
 });
