@@ -2,7 +2,8 @@
 
 <div id="Banner-{{ section.id }}" class="banner-com-link">
 
-  <h1>CONTENT = {{ settings.txt_alt_text }}</h1>
+  <h1>settings.txt_alt_text = {{ settings.txt_alt_text }}</h1>
+  <h1>section.settings.txt_alt_text = {{ settings.txt_alt_text }}</h1>
 
 </div>
 
@@ -34,13 +35,6 @@ Message: {{ block.settings.message }}
     {
       "type": "paragraph",
       "content": "Alt Text (Texto Alternativo) é o texto da descrição da imagens, aquele que é lido em voz alta por leitores de tela, ajudando os usuários com deficiência visual a navegar na web e melhorando a posição SEO."
-    },
-    {
-      "type": "checkbox",
-      "id": "exibe_x",
-      "label": "Mostrar X",
-      "info": "Lorem Ipsum [Veja aqui](https://help.shopify.com/manual/online-store/dynamic-checkout)",
-      "default": true
     },
   ],
   "presets": [
