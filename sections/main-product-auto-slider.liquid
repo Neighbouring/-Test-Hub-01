@@ -82,26 +82,7 @@
 </div>
 
 <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
-
-<script>
-  $('article').hover(function () {
-    $('article').toggleClass('parar');
-  });
-  
-  $('article').blur(function () {
-    $('article').toggleClass('rodar');
-  });  
-</script>
-
-{% comment %} 
-// Settings
-Message: {{ settings.message }}
-// Section
-Message: {{ section.settings.message }}
-// Block
-Message: {{ block.settings.message }}
-{% endcomment %}
-
+<script src="{{ '_jquery_auto_slider.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
