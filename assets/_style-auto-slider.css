@@ -1,6 +1,7 @@
 img#imgSetSliderAutoPlay {
-  display: block;
-  width: 100%;
+    display: block;
+    width: auto;
+    height: 70vh;
 }
 @media screen and (max-width: 600px){
     img#imgSetSliderAutoPlay {
