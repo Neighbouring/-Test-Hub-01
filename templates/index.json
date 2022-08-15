@@ -1,17 +1,20 @@
 {
   "sections": {
-    "16605304895ee4b245": {
-      "type": "main-product-auto-slider",
+    "16605900631e859c54": {
+      "type": "featured-blog",
       "settings": {
-        "txt_alt_text": "Coleção",
-        "image_01": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
-        "image_02": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
-        "image_03": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
-        "image_04": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+        "heading": "Blog posts",
+        "blog": "",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
       }
     }
   },
   "order": [
-    "16605304895ee4b245"
+    "16605900631e859c54"
   ]
 }
