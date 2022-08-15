@@ -3,7 +3,7 @@
 <div id="Banner-{{ section.id }}" class="banner-com-link">
 
   <h1>settings.txt_alt_text = {{ settings.txt_alt_text }}</h1>
-  <h1>section.settings.txt_alt_text = {{ settings.txt_alt_text }}</h1>
+  
   <img
     loading="lazy"
     src="{{ section.settings.sampleid | image_url: '200x200' }}"
@@ -49,24 +49,6 @@ Message: {{ block.settings.message }}
       "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/online-store/dynamic-checkout)",
       "default": true
     },
-  ],
-  "blocks": [
-    {
-      "type": "image",
-      "name": "Product Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "product",
-          "label": "Product Image"
-        },
-        {
-          "type": "product",
-          "id": "sampleid",
-          "label": "Product"
-        }
-      ]
-    }
   ],
   "presets": [
     {
