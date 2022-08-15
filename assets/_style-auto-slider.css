@@ -1,14 +1,14 @@
-img#imgSetSliderAutoPlay {
+/* img#imgSetSliderAutoPlay {
   display: block;
   width: 100%;
-}
+} */
 
 section#section-auto-play {
   width: 100%;
   overflow: hidden;
 }
 
-article#encap-div-auto-play {
+article.anima-auto-play {
   display: flex;
   width: 200%;
   -webkit-animation: bannermove 60s linear infinite;
