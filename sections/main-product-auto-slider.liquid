@@ -2,29 +2,33 @@
 
 <div id="Banner-{{ section.id }}" class="banner-com-link">
 
-  <h1>settings.settings.image_01 = {{ settings.settings.image_01 }}</h1>
+  <h1>{{ settings.txt_alt_text }}</h1>
   
   <img
     loading="lazy"
-    src="{{ section.settings.image_01 | image_url: '900x' }}"
+    src="{{ settings.image_01 | img_url: '500x' }}"
+    alt="{{ settings.image_01.alt | escape }}"
     width="100"
     height="100"
   />
   <img
     loading="lazy"
-    src="{{ settings.image_02 | image_url: '1600x' }}"
+    src="{{ settings.image_02 | img_url: '900x' }}"
+    alt="{{ settings.image_02.alt | escape }}"
     width="100"
     height="100"
   />
   <img
     loading="lazy"
-    src="{{ settings.image_03 | image_url: '1600x' }}"
+    src="{{ settings.image_03 | img_url: '900x' }}"
+    alt="{{ settings.image_03.alt | escape }}"
     width="100"
     height="100"
   />  
   <img
     loading="lazy"
-    src="{{ settings.image_04 | image_url: '1600x' }}"
+    src="{{ settings.image_04 | img_url: '900x' }}"
+    alt="{{ settings.image_04.alt | escape }}"
     width="100"
     height="100"
   />  
