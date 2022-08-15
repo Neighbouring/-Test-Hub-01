@@ -10,9 +10,10 @@ section#section-auto-play {
 
 article.anima-auto-play {
   display: flex;
+  position: relative;
   width: 200%;
   -webkit-animation: 60s linear infinite;
-  animation: rodarImagens  60s linear infinite;
+  animation: rodarImagens 60s linear infinite;
 }
 @-webkit-keyframes rodarImagens {
   0% {
