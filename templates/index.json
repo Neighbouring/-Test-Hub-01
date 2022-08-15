@@ -3,8 +3,8 @@
     "1660590471ce87e474": {
       "type": "main-product-auto-slider",
       "settings": {
-        "txt_alt_text_imagem": "",
-        "altura_100vh": false,
+        "txt_alt_text_imagem": "Coleção de Verão",
+        "altura_100vh": true,
         "product_01": "divine-bird",
         "product_02": "divine-bird",
         "product_03": "divine-bird",
