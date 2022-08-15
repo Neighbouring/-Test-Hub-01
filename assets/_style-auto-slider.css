@@ -8,7 +8,7 @@ section#section-auto-play {
   overflow: hidden;
 }
 
-article {
+article#encap-div-auto-play {
   display: flex;
   width: 200%;
   -webkit-animation: bannermove 60s linear infinite;
