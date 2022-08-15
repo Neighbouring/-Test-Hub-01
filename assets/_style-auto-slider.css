@@ -2,11 +2,11 @@ img#imgSetSliderAutoPlay {
     display: block;
     width: auto;
 }
-.alturaImgvh{
+.alturaImg_vh{
   height: 70vh;
 }
 @media screen and (max-width: 600px){
-  .alturaImgvh {
+  .alturaImg_vh {
     height: 60vh;
 }
 }
