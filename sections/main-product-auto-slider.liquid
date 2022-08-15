@@ -34,6 +34,36 @@ Message: {{ block.settings.message }}
   "max_blocks": 3,
   "settings": [
     {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.newsletter.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.newsletter.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.newsletter.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.newsletter.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.newsletter.settings.color_scheme.options__5.label"
+        },
+        {
+          "default": "background-1",
+          "label": "XYZ875784"
+        }
+      ],
+    },
+    {
       "type": "text",
       "id": "txt_alt_text",
       "label": "Descrição Alt Text"
@@ -41,14 +71,7 @@ Message: {{ block.settings.message }}
     {
       "type": "paragraph",
       "content": "Alt Text é o texto que descreve as imagens."
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_payment_button",
-      "label": "Show dynamic checkout button",
-      "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/online-store/dynamic-checkout)",
-      "default": true
-    },
+    }
   ],
   "presets": [
     {
