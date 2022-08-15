@@ -34,16 +34,9 @@
         "color_scheme": "background-1",
         "full_width": true
       }
-    },
-    "1660527218e4c59eef": {
-      "type": "main-product-auto-slider",
-      "settings": {
-        "iDtexto": ""
-      }
     }
   },
   "order": [
-    "16605204994f6853ef",
-    "1660527218e4c59eef"
+    "16605204994f6853ef"
   ]
 }
