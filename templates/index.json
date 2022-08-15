@@ -3,7 +3,8 @@
     "16605304895ee4b245": {
       "type": "main-product-auto-slider",
       "settings": {
-        "iDtexto": ""
+        "txt_alt_text": "",
+        "image_01": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg"
       }
     }
   },
