@@ -5,3 +5,5 @@ $('section#section-auto-play').hover(function () {
 $('section#section-auto-play').blur(function () {
   $('section#section-auto-play').toggleClass('rodar');
 });
+
+console.log("JQUERY ATIVO");
