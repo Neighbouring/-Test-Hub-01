@@ -1,20 +1,18 @@
 {
   "sections": {
-    "16605900631e859c54": {
-      "type": "featured-blog",
+    "1660590471ce87e474": {
+      "type": "main-product-auto-slider",
       "settings": {
-        "heading": "Blog posts",
-        "blog": "",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
+        "txt_alt_text_imagem": "",
+        "altura_100vh": false,
+        "product_01": "divine-bird",
+        "product_02": "divine-bird",
+        "product_03": "divine-bird",
+        "product_04": "divine-bird"
       }
     }
   },
   "order": [
-    "16605900631e859c54"
+    "1660590471ce87e474"
   ]
 }
