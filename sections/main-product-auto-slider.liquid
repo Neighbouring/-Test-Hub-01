@@ -2,7 +2,7 @@
 
 <div id="Banner-{{ section.id }}" class="banner-com-link">
 
-  <h1>CONTENT {{ settings.iDtexto }}</h1>
+  <h1>CONTENT {{ section.settings.message }}</h1>
 
 </div>
 
@@ -29,11 +29,11 @@ Message: {{ block.settings.message }}
     {
       "type": "text",
       "id": "iDtexto",
-      "label": "Descrição (Alt Text) SEO"
+      "label": "Descrição Alt Text"
     },
     {
       "type": "paragraph",
-      "content": "All of your collections are listed by default. To customize your list, choose 'Selected' and add collections."
+      "content": "Alt Text (Texto Alternativo) é o texto da descrição da imagens, aquele que é lido em voz alta por leitores de tela, ajudando os usuários com deficiência visual a navegar na web e melhorando a posição SEO."
     }
   ],
   "presets": [
