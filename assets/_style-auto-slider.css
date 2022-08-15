@@ -4,7 +4,7 @@ img#imgSetSliderAutoPlay {
 }
 @media screen and (max-width: 600px){
     img#imgSetSliderAutoPlay {
-      height: 50vh;
+      height: 75vh;
       width: auto;
   }
 }
