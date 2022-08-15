@@ -25,7 +25,7 @@ Message: {{ block.settings.message }}
   "name": "Auto Slider",
   "tag": "section",
   "class": "slideshow",
-  "limit": 4,
+  "max_blocks": 3,
   "settings": [
     {
       "type": "text",
@@ -43,6 +43,24 @@ Message: {{ block.settings.message }}
       "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/online-store/dynamic-checkout)",
       "default": true
     },
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Product Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product",
+          "label": "Product Image"
+        },
+        {
+          "type": "product",
+          "id": "sampleid",
+          "label": "Product"
+        }
+      ]
+    }
   ],
   "presets": [
     {
