@@ -1,30 +1,89 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 <div id="Banner-{{ section.id }}" class="banner-com-link">
-  
-  <img
-    loading="lazy"
-    src="{{ section.settings.image_01 | img_url: '900x' }}"
-    alt="{{ section.settings.txt_alt_text | escape }}"
-  />
-  <img
-    loading="lazy"
-    src="{{ section.settings.image_02 | img_url: '900x' }}"
-    alt="{{ section.settings.txt_alt_text | escape }}"
-  />
-  <img
-    loading="lazy"
-    src="{{ section.settings.image_03 | img_url: '900x' }}"
-    alt="{{ section.settings.txt_alt_text | escape }}"
-  />  
-  <img
-    loading="lazy"
-    src="{{ section.settings.image_04 | img_url: '900x' }}"
-    alt="{{ section.settings.txt_alt_text | escape }}"
-  />  
+
+  <section>
+    <article>
+      <div>
+        <ul>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              alt="{{ section.settings.txt_alt_text | escape }}"
+            />
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
 
 </div>
 
+<script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
+
+<script>
+  $('article').hover(function () {
+    $('article').toggleClass('parar');
+  });
+  
+  $('article').blur(function () {
+    $('article').toggleClass('rodar');
+  });  
+</script>
 
 {% comment %} 
 // Settings
