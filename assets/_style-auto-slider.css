@@ -12,9 +12,9 @@ article.anima-auto-play {
   display: flex;
   width: 200%;
   -webkit-animation: 60s linear infinite;
-  animation: bannermove  60s linear infinite;
+  animation: rodarImagens  60s linear infinite;
 }
-@-webkit-keyframes bannermove {
+@-webkit-keyframes rodarImagens {
   0% {
     transform: translateX(0);
   }
@@ -22,7 +22,7 @@ article.anima-auto-play {
     transform: translateX(-50%);
   }
 }
-@keyframes bannermove {
+@keyframes rodarImagens {
   0% {
     transform: translateX(0);
   }
