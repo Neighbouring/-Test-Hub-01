@@ -21,6 +21,12 @@ article.anima-auto-play {
   -webkit-animation: 60s linear infinite;
   animation: rodarImagens 60s linear infinite;
 }
+@media screen and (max-width: 600px){
+    article.anima-auto-play {
+      -webkit-animation: 30s linear infinite;
+      animation: rodarImagens 30s linear infinite;
+    }
+}
 @-webkit-keyframes rodarImagens {
   0% {
     transform: translateX(0);
