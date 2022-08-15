@@ -1,4 +1,5 @@
 {{ '_style-auto-slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ '_jquery_auto_slider.js' | asset_url }}" defer></script>
 
 <div id="Banner-{{ section.id }}" class="div-slider">
 
@@ -82,7 +83,7 @@
 </div>
 
 <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
-<script src="{{ '_jquery_auto_slider.js' | asset_url }}" defer></script>
+
 
 {% schema %}
 {
