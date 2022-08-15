@@ -2,6 +2,12 @@ img#imgSetSliderAutoPlay {
   display: block;
   width: 100%;
 }
+@media screen and (max-width: 600px){
+    img#imgSetSliderAutoPlay {
+      height: 50vh;
+      width: auto;
+  }
+}
 
 section#section-auto-play {
   width: 100%;
@@ -58,3 +64,5 @@ li#img_exib_03,
 li#img_exib_04 {
   width: 100%;
 }
+
+
