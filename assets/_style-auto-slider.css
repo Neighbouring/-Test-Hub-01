@@ -14,7 +14,6 @@ article.anima-auto-play {
   -webkit-animation: bannermove 60s linear infinite;
   animation: bannermove 60s linear infinite;
 }
-
 @-webkit-keyframes "bannermove" {
   0% {
     transform: translateX(0);
