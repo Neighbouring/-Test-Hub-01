@@ -4,7 +4,7 @@
       "type": "main-product-auto-slider",
       "settings": {
         "txt_alt_text_imagem": "",
-        "altura_100vh": true,
+        "altura_100vh": false,
         "product_01": "divine-bird",
         "product_02": "divine-bird",
         "product_03": "divine-bird",
