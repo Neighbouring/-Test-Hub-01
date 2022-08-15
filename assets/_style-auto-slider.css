@@ -1,13 +1,17 @@
 img#imgSetSliderAutoPlay {
     display: block;
     width: auto;
-    height: 70vh;
+}
+img.alturaImg_70vh{
+  height: 70vh;
 }
 @media screen and (max-width: 600px){
-    img#imgSetSliderAutoPlay {
-      height: 60vh;
-      width: auto;
-  }
+  img.alturaImg_70vh {
+    height: 60vh;
+}
+}
+img.alturaImg_100vh{
+  height: 100vh;
 }
 
 section#section-auto-play {
