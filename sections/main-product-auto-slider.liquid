@@ -1,68 +1,76 @@
 {{ 'section-auto-slider.css' | asset_url | stylesheet_tag }}
 
-<div id="Banner-{{ section.id }}" class="banner-com-link">
+<div id="Banner-{{ section.id }}" class="div-slider">
 
   <section id="section-auto-play">
     <article id="encap-div-auto-play">
       <div>
-        <ul>
-          <li>
+        <ul id="ul_img_slider">
+          <li id="img_exib_01">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
               src="{{ section.settings.image_01 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
-          <li>
+          <li id="img_exib_02">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
-              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              src="{{ section.settings.image_02 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
-          <li>
+          <li id="img_exib_03">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
-              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              src="{{ section.settings.image_03 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
-          <li>
+          <li id="img_exib_04">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
-              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              src="{{ section.settings.image_04 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
         </ul>
       </div>
       <div>
-        <ul>
-          <li>
+        <ul id="ul_img_slider">
+          <li id="img_exib_01">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
               src="{{ section.settings.image_01 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
-          <li>
+          <li id="img_exib_02">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
-              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              src="{{ section.settings.image_02 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
-          <li>
+          <li id="img_exib_03">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
-              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              src="{{ section.settings.image_03 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
-          <li>
+          <li id="img_exib_04">
             <img
+              id="imgSetSliderAutoPlay"
               loading="lazy"
-              src="{{ section.settings.image_01 | img_url: '900x' }}"
+              src="{{ section.settings.image_04 | img_url: '900x' }}"
               alt="{{ section.settings.txt_alt_text | escape }}"
             />
           </li>
