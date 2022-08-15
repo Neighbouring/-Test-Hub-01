@@ -1,7 +1,5 @@
 {{ '_style-auto-slider.css' | asset_url | stylesheet_tag }}
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <div id="Banner-{{ section.id }}" class="div-slider">
 
   <section id="section-auto-play">
@@ -161,17 +159,9 @@
 </div>
 
 
-<script>
-  $('section#section-auto-play').hover(function () {
-    $('section#section-auto-play').toggleClass('parar');
-  });
-  
-  $('section#section-auto-play').blur(function () {
-    $('section#section-auto-play').toggleClass('rodar');
-  });
-  
-  console.log("JQUERY ATIVO");
-</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{ '_jquery_auto_slider.js' | asset_url }}" defer="defer"></script>
+
 
 {% schema %}
 {
