@@ -1,11 +1,11 @@
 // $('#section-auto-play').hide();
 
-$('#section-auto-play').hover(function () {
-  $('#section-auto-play').toggleClass('parar');
+$('.anima-auto-play').hover(function () {
+  $('.anima-auto-play').toggleClass('.parar');
 });
 
-// $('#section-auto-play').blur(function () {
-//   $('#section-auto-play').toggleClass('rodar');
-// });
+$('.anima-auto-play').blur(function () {
+  $('.anima-auto-play').toggleClass('.rodar');
+});
 
 console.log("JQUERY ATIVO");
