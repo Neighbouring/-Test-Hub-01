@@ -7,7 +7,7 @@
 
 $(".anima-auto-play").ready(function(){
   $(".anima-auto-play").hover(function(){
-    $(".anima-auto-play").hide();
+    $(".anima-auto-play").toggleClass('.parar');
   });
 });
 
