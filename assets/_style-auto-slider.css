@@ -19,7 +19,7 @@ section#section-auto-play {
   overflow: hidden;
 }
 
-article.anima-auto-play {
+.anima-auto-play {
   display: flex;
   position: relative;
   width: 200%;
@@ -27,7 +27,7 @@ article.anima-auto-play {
   animation: rodarImagens 60s linear infinite;
 }
 @media screen and (max-width: 600px){
-    article.anima-auto-play {
+    .anima-auto-play {
       -webkit-animation: 30s linear infinite;
       animation: rodarImagens 30s linear infinite;
     }
