@@ -1,8 +1,14 @@
 // $('#section-auto-play').hide();
 
-$('.anima-auto-play').hover(function () {
-  $('.anima-auto-play').toggleClass('.parar');
-  console.log("JQUERY PARAR");
+// $('.anima-auto-play').hover(function () {
+//   $('.anima-auto-play').toggleClass('.parar');
+//   console.log("JQUERY PARAR");
+// });
+
+$(".anima-auto-play").ready(function(){
+  $(".anima-auto-play").hover(function(){
+    $(".anima-auto-play").hide();
+  });
 });
 
 $('.anima-auto-play').blur(function () {
