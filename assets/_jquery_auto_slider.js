@@ -1,3 +1,5 @@
+$('#section-auto-play').hide();
+
 $('#section-auto-play').hover(function () {
   $('#section-auto-play').toggleClass('parar');
 });
